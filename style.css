@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/01_img.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden;
+}
+.runway{
+    height: 100px;
+    width: 100%;
+    background-image: url(img/road.jpg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.airplane{
+    width: 200px;
+    height: 10vh;
+    position: absolute;
+    bottom: 72px;
+    right: -60px;
+    animation: airplane 5s linear infinite; 
+    transform-origin: 100% 50%;
+}
+@keyframes airplane{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    25%{
+        transform: translateX(-170px) translateY(-10px) rotate(3deg);
+    }
+    30%{
+        transform: translateX(-200px) translateY(-20px) rotate(4deg);
+    }
+    40%{
+        transform: translateX(-300px) translateY(-55px) rotate(5deg);
+    }
+    50%{
+        transform: translateX(-450px) translateY(-80px) rotate(7deg);
+    }
+    65%{
+        transform: translateX(-670px) translateY(-100px) rotate(8deg);
+    }
+    80%{
+        transform: translateX(-900px) translateY(-125px) rotate(9deg);
+    }
+    90%{
+        transform: translateX(-1200px) translateY(-165px) rotate(10deg);
+    }
+    100%{
+        transform: translateX(-1400px) translateY(-180px) rotate(11deg);
+    }
+}
+
